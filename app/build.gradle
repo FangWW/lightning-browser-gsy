@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "acr.browser.lightning"
+        minSdkVersion 14
+        targetSdkVersion 22
+        versionCode 78
+        versionName "4.0.10a"
+    }
+
+    buildTypes {
+        release {
+//            minifyEnabled true
+//            shrinkResources true
+//            proguardFiles 'proguard-project.txt'
+        }
+        debug {
+//            minifyEnabled true
+//            shrinkResources true
+//            proguardFiles 'proguard-project.txt'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile(project(':libnetcipher')) {
+        // Exclude any support-v4 modules because appcompat-v7 will import the latest
+        exclude module: 'support-v4'
+        exclude module: 'android-support-v4'
+    }
+    compile 'com.android.support:palette-v7:22.1.1'
+    compile 'com.android.support:appcompat-v7:22.1.1'
+    //    compile 'org.jsoup:jsoup:1.8.3'
+    compile 'net.i2p.android:client:0.7@aar'
+    compile files('libs/jsoup-1.8.3.jar')
+    compile files('libs/universal-image-loader-1.9.4.jar')
+    compile files('libs/tbs_sdk_v1.4.1.1085_25433_obfs_20150917_114640.jar')
+}
