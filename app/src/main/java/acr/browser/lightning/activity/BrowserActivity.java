@@ -1953,7 +1953,7 @@ public class BrowserActivity extends ThemableActivity implements BrowserControll
 
     @Override
     public void onProgressChanged(int n) {
-        if (mp != null && mp.isShowing() && n >= 80) {
+        if (mp != null && mp.isShowing() && n >= 80 && !isFinishing()) {
             mp.dismiss();
         }
     }
@@ -2767,7 +2767,7 @@ public class BrowserActivity extends ThemableActivity implements BrowserControll
     public void onPageFinished() {
         mProgressBar.setVisibility(View.GONE);
         mUILayoutLoading.setVisibility(View.GONE);
-        if (mp != null && mp.isShowing()) {
+        if (mp != null && mp.isShowing() && !isFinishing()) {
             mp.dismiss();
         }
     }
@@ -2780,7 +2780,7 @@ public class BrowserActivity extends ThemableActivity implements BrowserControll
             mp = new LoadDialog(getActivity());
 //            mp.setProgressStyle(ProgressDialog.STYLE_SPINNER);
         }
-        if (!mp.isShowing()) {
+        if (!mp.isShowing() && !isFinishing()) {
             mp.show();
         }
     }
