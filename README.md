@@ -10,7 +10,7 @@
 
 ###web-app
     纯wap
-    手机淘宝:[https://m.taobao.com/#index](http://www.google.com)<br />
+    手机淘宝: [https://m.taobao.com/#index](https://m.taobao.com/#index)
 
 ###native-app
     一般应用
@@ -30,7 +30,7 @@
 
 
 
-      权限和其他需要考虑问题:
+###权限和其他需要考虑问题:
       定位
       推送
       页面统计(客户端和服务端都需要做?)
@@ -90,7 +90,7 @@ Uc浏览器
     onDestroy
     ....
 
-
+###
     平滑返回如uc浏览器 
     
     推送页面跳转接口协议 
@@ -99,10 +99,10 @@ Uc浏览器
     无网络强制取缓存
 
 
-    h5优先加载html和css   javascript延迟加载
-    http://gaibing2009.diandian.com/post/2012-08-07/40035127817
-    常见js库(jQuery)写在本地app
-    http://blog.csdn.net/dliyuedong/article/details/46947007
+###h5优先加载html和css   javascript延迟加载
+[http://gaibing2009.diandian.com/post/2012-08-07/40035127817](http://gaibing2009.diandian.com/post/2012-08-07/40035127817)
+###常见js库(jQuery)写在本地app
+[http://blog.csdn.net/dliyuedong/article/details/46947007](http://blog.csdn.net/dliyuedong/article/details/46947007)
 
 ###图片延迟加载,但是要提起把图片的大小预留出来
 
