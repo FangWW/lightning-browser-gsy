@@ -10,7 +10,7 @@
 
 ### web-app
     纯wap
-    手机淘宝:  [https://m.taobao.com/#index](https://m.taobao.com/#index)
+    手机淘宝:https://m.taobao.com/#index
 
 ### native-app
     一般应用
@@ -97,7 +97,7 @@
 
 ### 图片延迟加载,但是要提起把图片的大小预留出来
 
-### 一个漂亮的h5框架:http://dev.dcloud.net.cn/mui/
+### 一个漂亮的h5框架:[http://dev.dcloud.net.cn/mui/](http://dev.dcloud.net.cn/mui/)
 
     一些国产手机浏览器，为了制造“极速”的假象，缓存处理很多地方都没有按照规范来，动不动就会过度缓存，导致页面不能及时更新。Android Webview的LOAD_CACHE_ELSE_NETWORK设置更是完全无视etag、expire time这些，强制使用缓存。
 
